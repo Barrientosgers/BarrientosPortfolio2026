@@ -53,10 +53,10 @@ function App() {
             <div className="space-y-5">
               <span className="eyebrow">Software Engineer | AI Systems Engineer | Cloud & Reliability</span>
               <h1 className="max-w-4xl font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Building reliable systems that make hard problems feel tractable.
+                Building reliable systems and practical AI tools that teams can trust.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-                I build reliable software systems with experience in distributed systems, cloud platforms, QA automation, and AI-powered applications.
+                I build dependable software and AI systems across distributed services, cloud platforms, and QA automation.
               </p>
             </div>
 
@@ -112,20 +112,17 @@ function App() {
                 <span className="text-sm text-slate-400">Redmond, WA</span>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Focus</p>
+                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">What I bring</p>
                 <p className="mt-3 text-2xl font-semibold text-white">
-                  Engineering systems that are calm, observable, and easy to trust.
+                  Calm debugging, production reliability, and practical AI that fits real workflows.
                 </p>
               </div>
               <div className="grid gap-3">
-                {['Reliable production systems', 'AI-powered workflows', 'Cloud and QA discipline'].map((item) => (
+                {['Backend and distributed systems', 'Cloud platforms and CI/CD', 'QA automation and release confidence', 'Responsible AI applications'].map((item) => (
                   <div key={item} className="rounded-2xl border border-white/10 bg-slate-950/35 px-4 py-3 text-sm text-slate-200">
                     {item}
                   </div>
                 ))}
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-slate-950/35 p-4 text-sm leading-6 text-slate-300">
-                Recruiters and hiring managers can scan this page quickly: background, skills, experience, projects, and contact options are all surfaced above the fold or within one scroll.
               </div>
             </div>
           </aside>
@@ -143,7 +140,7 @@ function App() {
           <SectionHeading
             eyebrow="Skills"
             title="Technical depth across software, cloud, testing, and AI."
-            description="The goal here is clarity: a recruiter should be able to see your strongest areas immediately, and a hiring manager should be able to map them to the role in seconds."
+            description="The categories are grouped for fast scanning so a recruiter can match the work to the role in seconds."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {skillGroups.map((group) => (
@@ -155,8 +152,8 @@ function App() {
         <section id="experience" className="section-shell scroll-mt-24">
           <SectionHeading
             eyebrow="Experience"
-            title="Impact focused roles across support, quality, and engineering."
-            description="Each card is written to emphasize reliability, debugging, cloud systems, testing, and collaboration."
+            title="Relevant experience across support, quality, and engineering."
+            description="The bullets stay specific and practical: reliability, debugging, cloud systems, testing, and collaboration."
           />
           <div className="mt-10 grid gap-6">
             {experiences.map((item) => (
@@ -168,13 +165,16 @@ function App() {
         <section id="projects" className="section-shell scroll-mt-24">
           <SectionHeading
             eyebrow="Projects"
-            title="Featured work you can tailor later."
-            description="These cards are intentionally placeholder-friendly, so you can update the product names, descriptions, links, and stacks without restructuring the page."
+            title="Selected projects with a clear featured example."
+            description="The first card is meant to lead the section, while the rest stay concise and easy to replace as you finish them."
           />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard key={project.name} {...project} />
-            ))}
+          <div className="mt-10 grid gap-6">
+            <ProjectCard {...projects[0]} featured />
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {projects.slice(1).map((project) => (
+                <ProjectCard key={project.name} {...project} />
+              ))}
+            </div>
           </div>
         </section>
 

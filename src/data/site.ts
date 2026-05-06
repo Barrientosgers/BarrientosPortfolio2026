@@ -9,12 +9,12 @@ export const navigation = [
 
 export const heroStats = [
   { value: 'Distributed systems', label: 'Reliable software under pressure' },
-  { value: 'Cloud + QA', label: 'Quality-minded engineering across the stack' },
+  { value: 'Cloud + QA', label: 'Testing and release confidence across the stack' },
   { value: 'AI systems', label: 'Practical, responsible use of LLMs' },
 ];
 
 export const aboutCopy =
-  'I am a software engineer based in Redmond, WA with experience at Google, Amazon, and Super Purposes. I enjoy building reliable systems, debugging complex problems, and learning how AI can be used responsibly to help people. I have a master’s degree in AI Software Engineering from WGU.';
+  'I’m a software engineer based in Redmond, WA. I’ve worked at Google, Amazon, and Super Purposes, and I like building systems that stay reliable under real-world pressure. My background spans cloud platforms, QA automation, distributed systems, and responsible AI applications. I also hold a master’s degree in AI Software Engineering from WGU.';
 
 export const skillGroups = [
   {
@@ -45,7 +45,7 @@ export const experiences = [
     role: 'Technical Support Engineer',
     period: 'Experience highlights',
     bullets: [
-      'Diagnosed complex production issues, identified root causes, and translated findings into clear next steps for engineering partners.',
+      'Diagnosed complex production issues, isolated likely root causes, and translated findings into clear next steps for engineering partners.',
       'Improved reliability by documenting repeatable debugging workflows and strengthening incident handoff details.',
       'Worked across teams to unblock customers quickly while protecting system quality and supportability.',
     ],
@@ -74,34 +74,43 @@ export const experiences = [
 
 export const projects = [
   {
+    featured: true,
     name: 'AI Support Triage Assistant',
     description:
-      'A support workflow helper that classifies incoming issues, suggests next actions, and surfaces the most relevant context for rapid response.',
+      'A support workflow prototype that classifies incoming issues, suggests next actions, and surfaces the right context for faster handoff.',
     stack: ['Python', 'LLMs', 'APIs', 'Vertex AI'],
+    status: 'Prototype',
+    focus: ['LLM routing and triage', 'Context shaping for responders', 'Practical support workflow design'],
     github: 'https://github.com/your-github/ai-support-triage-assistant',
     live: 'https://example.com',
   },
   {
     name: 'Cloud Reliability Dashboard',
     description:
-      'A monitoring dashboard for service health, latency trends, and incident response signals across cloud-native workloads.',
+      'A dashboard concept for tracking service health, latency trends, and incident signals across cloud-native workloads.',
     stack: ['TypeScript', 'Google Cloud', 'Observability', 'React'],
+    status: 'Concept',
+    focus: ['Service health visibility', 'Latency and incident signals', 'Operational clarity'],
     github: 'https://github.com/your-github/cloud-reliability-dashboard',
     live: 'https://example.com',
   },
   {
     name: 'LLM Local Pipeline with Docker',
     description:
-      'A local, containerized pipeline for experimenting with LLM workflows, reproducible environments, and model evaluation.',
+      'A containerized local pipeline for experimenting with LLM workflows, reproducible environments, and model evaluation.',
     stack: ['Docker', 'Python', 'LLMs', 'Automation'],
+    status: 'Prototype',
+    focus: ['Reproducible setup', 'Containerized workflow', 'Evaluation and iteration'],
     github: 'https://github.com/your-github/llm-local-pipeline',
     live: 'https://example.com',
   },
   {
     name: 'CleanTrack Apartment Task Manager',
     description:
-      'A lightweight task manager for households and apartment teams with clear assignments, reminders, and visibility into progress.',
+      'A lightweight task manager for households and apartment teams with clear assignments, reminders, and progress visibility.',
     stack: ['TypeScript', 'React', 'APIs', 'Productivity'],
+    status: 'App concept',
+    focus: ['Simple task ownership', 'Reminder-friendly UX', 'Progress visibility'],
     github: 'https://github.com/your-github/cleantrack',
     live: 'https://example.com',
   },
@@ -110,6 +119,8 @@ export const projects = [
     description:
       'A browser extension concept that checks common compatibility issues and helps teams spot client-side problems faster.',
     stack: ['JavaScript', 'Browser APIs', 'QA Automation'],
+    status: 'Utility',
+    focus: ['Compatibility checks', 'Browser API usage', 'QA automation support'],
     github: 'https://github.com/your-github/web-compat-extension',
     live: 'https://example.com',
   },
