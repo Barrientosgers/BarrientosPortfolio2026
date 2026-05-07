@@ -190,7 +190,7 @@ export const beyondEngineering =
 export const contact = {
   email: 'gersonbarrientos62@gmail.com',
   linkedin: 'https://www.linkedin.com/in/gersonbarrientos/',
-  github: 'https://github.com/your-github',
+  github: 'https://github.com/Barrientosgers',
 };
 
 // Default export (optional) — convenient single import if you prefer:
