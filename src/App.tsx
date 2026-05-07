@@ -7,7 +7,7 @@ import {
   navigation,
   projects,
   skillGroups,
-} from './data/site';
+} from './data/portfolio';
 import { SectionHeading } from './components/SectionHeading';
 import { SkillCard } from './components/SkillCard';
 import { ExperienceCard } from './components/ExperienceCard';
