@@ -126,6 +126,16 @@ export const experiences = [
 export const projects = [
   {
     featured: true,
+    name: 'Mood Brew',
+    description:
+      'A beginner-friendly React + TypeScript app that recommends cozy coffee and tea drinks based on mood, preferences, and weather vibe, with a local recommendation engine and saved favorites.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
+    status: 'Live app',
+    focus: ['Mood-based drink recommendations', 'Local scoring engine with no external API', 'Favorites saved in localStorage'],
+    github: 'https://github.com/Barrientosgers/Mood-Brew/',
+    live: 'https://barrientosgers.github.io/Mood-Brew/',
+  },
+  {
     name: 'AI Support Triage Assistant',
     description:
       'A support workflow prototype that classifies incoming issues, suggests next actions, and surfaces the right context for faster handoff.',

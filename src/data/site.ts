@@ -75,14 +75,14 @@ export const experiences = [
 export const projects = [
   {
     featured: true,
-    name: 'AI Support Triage Assistant',
+    name: 'Mood Brew',
     description:
-      'A support workflow prototype that classifies incoming issues, suggests next actions, and surfaces the right context for faster handoff.',
-    stack: ['Python', 'LLMs', 'APIs', 'Vertex AI'],
-    status: 'Prototype',
-    focus: ['LLM routing and triage', 'Context shaping for responders', 'Practical support workflow design'],
-    github: 'https://github.com/your-github/ai-support-triage-assistant',
-    live: 'https://example.com',
+      'A beginner-friendly React + TypeScript app that recommends cozy coffee and tea drinks based on mood, preferences, and weather vibe, with a local recommendation engine and saved favorites.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'GitHub Pages'],
+    status: 'Live app',
+    focus: ['Mood-based drink recommendations', 'Local scoring engine with no external API', 'Favorites saved in localStorage'],
+    github: 'https://github.com/Barrientosgers/Mood-Brew/',
+    live: 'https://barrientosgers.github.io/Mood-Brew/',
   },
   {
     name: 'Cloud Reliability Dashboard',
@@ -132,7 +132,7 @@ export const beyondEngineering =
 export const contact = {
   email: 'gersonbarrientos62@gmail.com',
   linkedin: 'https://www.linkedin.com/in/gersonbarrientos/',
-  github: 'https://github.com/your-github',
+  github: 'https://github.com/Barrientosgers',
 };
 
 // Replace the placeholder GitHub links above with your live repository URLs when ready.
